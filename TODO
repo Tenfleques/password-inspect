@@ -1,0 +1,36 @@
+authorized access
+    login                               page [login]
+        form
+        submission
+    registraton                         page[registration]
+        registration flow
+        submission
+
+add clients                             page[new-client]
+    client add form
+    submission
+
+give loan                               page[loans]
+    search client
+    preview history and credit score
+        short and detailed
+    give or decline loan
+        choose loan type
+        form 
+            create asset
+
+update returns to loan                  page[loans]
+    search loan
+    update returns to principle 
+
+blacklist bad debtors 
+    search client from search-client
+    blacklist or whitelist
+
+view clients' history                   page[clients]
+    search client
+    view history
+
+agent history                            page[history]
+    view agent's history
+    oustatnding, live and closed credits

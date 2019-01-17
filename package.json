@@ -1,0 +1,21 @@
+{
+    "name": "password-strength-analysis",
+    "description": "программное обеспечение моделирования парольной защиты и генерации паролей",
+    "author": {
+        "name": "Тендай Чикаке",
+        "email": "tendaichikake@gmail.com",
+        "url": "http://tendai.ilearnfb.com"
+    },
+    "title" : "Генерация паролей",
+    "version": "1.0.0",
+    "main": "splash.html",
+    "window": {
+        "icon": "img/favicon.png",
+        "show": true,
+        "toolbar": true,
+        "frame": false,
+        "position": "center",
+        "width": 400,
+        "height": 250
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "title": "Пароли",
+    "LANGUAGES": {
+        "en": {
+            "short":"en",
+            "long" : "English"
+        },
+        "ru": {
+            "short":"ru",
+            "long" : "Русский"
+        }
+    },
+    "PAGES": {}
+        
+}

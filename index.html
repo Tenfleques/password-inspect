@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Tendai Chikake">
+
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="favicon" href="img/favicon.png">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-table.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+    </head>
+
+    <body>
+
+        <div class="container-fluid pt-5 app-region">
+            <div class="row app-region pt-3">
+                <!--main content-->
+                    <div class="col-6 row h-200 alphabet-settings">
+                        <h6 class="col-12">
+                            <span class="lang ru">Параметры базового алфавита</span>
+                        </h6>
+                        <div class="form-group col-5 ml-2 form-check">
+                            <input type="checkbox" class="form-check-input alphabet-options" id="check-lu">
+                            <label class="form-check-label" for="check-lu">
+                                <span class="lang ru">
+                                    Включать прописные латинские буквы
+                                </span>
+                                <span class="lang en">
+                                    
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group col-5 ml-2 form-check">
+                            <input type="checkbox" class="form-check-input alphabet-options" id="check-ll">
+                            <label class="form-check-label" for="check-ll">
+                                <span class="lang ru">
+                                    Включать строчные латинские буквы
+                                </span>
+                                <span class="lang en">
+                                    
+                                </span>
+                            </label>
+                        </div>
+                        <hr class="col-11">
+                        <div class="form-group col-5 ml-2 form-check">
+                            <input type="checkbox" class="form-check-input alphabet-options" id="check-ru">
+                            <label class="form-check-label" for="check-ru">
+                                <span class="lang ru">
+                                    Включать прописные русские буквы
+                                </span>
+                                <span class="lang en">
+                                    
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group col-5 ml-2 form-check">
+                            <input type="checkbox" class="form-check-input alphabet-options" id="check-you">
+                            <label class="form-check-label" for="check-you">
+                                <span class="lang ru">
+                                    Включать Ё
+                                </span>
+                                <span class="lang en">
+                                    
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group col-5 ml-2 form-check">
+                            <input type="checkbox" class="form-check-input alphabet-options" id="check-rl">
+                            <label class="form-check-label" for="check-rl">
+                                <span class="lang ru">
+                                    Включать строчные русские буквы
+                                </span>
+                                <span class="lang en">
+                                    
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group col-5 ml-2 form-check">
+                            <input type="checkbox" class="form-check-input alphabet-options" id="check-yo">
+                            <label class="form-check-label" for="check-yo">
+                                <span class="lang ru">
+                                    Включать ё
+                                </span>
+                                <span class="lang en">
+                                    
+                                </span>
+                            </label>
+                        </div>
+                        <hr class="col-11">
+                        <div class="form-group col-5 ml-2 form-check">
+                            <input type="checkbox" class="form-check-input alphabet-options" id="check-n">
+                            <label class="form-check-label" for="check-n">
+                                <span class="lang ru">
+                                    Включать цифры
+                                </span>
+                                <span class="lang en">
+                                    
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group col-5 ml-2 form-check">
+                            <input type="checkbox" class="form-check-input alphabet-options" id="check-sp">
+                            <label class="form-check-label" for="check-sp">
+                                <span class="lang ru">
+                                    Включать специальные символы
+                                </span>
+                                <span class="lang en">
+                                    
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group ml-2">                            
+                            <label for="street">
+                                <span class="lang en"></span>
+                                <span class="lang ru">Количество символов базового алфавита</span>
+                            </label>
+                            <span class="size-basic-alphabet h6">0</span>
+                        </div>
+                    </div> 
+                    <div class="col-6 h-200">
+                        <table id="table-codes" class="col-12"
+                            data-search="true"
+                            data-show-refresh="false"
+                            data-show-toggle="false"
+                            data-show-columns="false"
+                            data-show-export="true"
+                            data-detail-view="false"
+                            data-minimum-count-columns=3
+                            data-show-pagination-switch="false"
+                            data-pagination="true"
+                            data-smart-display="true"
+                            data-sort-class="text-secondary"
+                            data-page-size="5"
+                            data-id-field="id"
+                            data-side-pagination="client">
+                        </table>
+                    </div>   
+                    <hr class="col-11">
+                </div>
+                <div class="row">                    
+                    <div class="col-6 mb-5 pb-5">
+                        <h6 class="col-12">
+                            <span class="lang ru">Исследование стойкости паролей</span>
+                        </h6>
+                        <div class="mb-3">
+                            <label for="maxlength">
+                                <span class="lang ru">Введите максимальную длину пароля</span>
+                            </label>
+                            <input type="number" min="1" class="form-control" name="maxlength" id="maxlength" placeholder="100">
+                                
+                        </div>
+                        <div class="mb-3">
+                            <label for="hackspeed">
+                                <span class="lang en"></span>
+                                <span class="lang ru">Введите скорость перебора паролей</span>
+                            </label>
+                            <input type="text" class="form-control" name="hackspeed" id="hackspeed" placeholder="1000000">
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-success col-12  calculate-complexity" type="submit">
+                                <span class="lang ru">Пуск</span>
+                            </button>  
+                        </div>
+                    </div>
+                    <div class="col-6 h-200 pt-0 mb-5">
+                        <table id="table-strength" class="col-12 mt-0"
+                            data-search="true"
+                            data-show-refresh="false"
+                            data-show-toggle="false"
+                            data-show-columns="false"
+                            data-show-export="true"
+                            data-detail-view="false"
+                            data-minimum-count-columns=3
+                            data-show-pagination-switch="false"
+                            data-pagination="true"
+                            data-smart-display="true"
+                            data-sort-class="text-secondary"
+                            data-page-size="5"
+                            data-id-field="id"
+                            data-side-pagination="client">
+                        </table>
+                    </div>
+                </div>
+            </div>               
+        </div>
+        <nav class="navbar fixed-bottom navbar-light bg-info border border-left-0 border-right-0 border-bottom-0 p-0 row">
+            <select class="custom-select international border-0 col-1 ml-5 dragless bg-transparent">       
+                </select>
+            <div class="col-10 copyright text-center">
+            </div>             
+        </nav>
+    
+
+
+
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/popper.min.js"></script>
+        <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="libs/bootstrap-table.min.js"></script>
+        
+        <script type="text/javascript" src="libs/functions.js"></script>
+
+        <script type="text/javascript" src="js/table.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/task.js"></script>
+
+
+        <script type="text/javascript" src="libs/index.js"></script>   
+        
+        
+    </body>
+</html>

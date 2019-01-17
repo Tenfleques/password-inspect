@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Tendai Chikake">
+
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="favicon" href="img/favicon.png">
+        <title></title>
+        <!--[if lte IE 8]>
+            <script src="js/excanvas.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+    </head>
+
+    <body>
+
+        <div class="modal fade errorBox" id="errorBox" tabindex="-1" role="dialog" aria-labelledby="errorBox" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content card">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="errorBox-header"></h4>
+                    </div>
+                    <div class="modal-body" id="errorBox-body">
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-sm-12">
+                            <button type="button" id="close-btn-var-color" class="btn btn-primary btn-danger international lang-close" data-dismiss="modal" aria-label="Close">                            
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <nav class="navbar fixed-top navbar-light bg-info border border-primary border-left-0 border-right-0 border-top-0 ">
+            <ul class="nav navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav col-10 wide-screen-nav p-0"> 
+                <li class="nav-item appname mt-2 mb-0">
+                </li>               
+            </ul>
+            <div class="window-action-buttons col-2 small text-right pr-0">
+                <i class="fa fa-minus btn bg-warning p-1 window-action window-action-minimize text-warning ml-1" id="window-action-minimize">
+                    
+                </i>
+                <i class="fa fa-plus btn bg-success p-1 window-action window-action-zoom text-success ml-1" id="window-action-zoom">
+                    
+                </i>
+                <i class="fa fa-times btn bg-danger p-1 window-action window-action-close text-danger ml-1" id="window-action-close">
+                    
+                </i>
+            </div>            
+        </nav>
+
+        <div class="container-fluid pt-5">
+            <div class="row card-deck">
+                <!--navigation-->
+                <div class="col-2 navigation-panel card ml-1 mr-1 border-left-0 border-bottom-0 border-top-0 bg-transparent">
+
+                </div>
+                <!--end navigation-->
+                <!--main content-->
+                <div class="col-10 content-pane card ml-0 mr-1 bg-transparent border-0">
+                    blaaa blaaa
+                </div>
+                <!--end main content-->
+            </div>               
+        </div>
+        <nav class="navbar fixed-bottom navbar-light bg-info border border-left-0 border-right-0 border-bottom-0">
+            <div class="col-12">
+                <div class="col-12 copyright text-center">
+                </div>
+            </div>
+        </nav>
+    
+
+
+
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/popper.min.js"></script>
+        <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="libs/functions.js"></script>
+        <script type="text/javascript" src="libs/app.js"></script>
+        
+        <script type="text/javascript" src="js/settings.js"></script>
+    </body>
+</html>
